@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form with Image Upload</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+    .login-form {
+      max-width: 350px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background: #4285F4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background: #357ae8;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="login-form" action="#" method="POST" enctype="multipart/form-data">
+    <h2>Login Form</h2>
+    <input type="text" name="username" placeholder="Enter Username" required>
+    <input type="email" name="email" placeholder="Enter Email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <input type="file" name="profile_image" accept="image/*" required>
+    <button type="submit">Login</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #333, #666);
+            color: white;
+            text-align: center;
+            padding: 30px 12px;
+        }
+
+        nav {
+            background: #444;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px;
+        }
+
+        h2 {
+            padding: 10px;
+            background: #ddd;
+            border-left: 6px solid rgb(73, 72, 72);
+            margin-bottom: 15px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 20px;
+            background: #fff;
+            vertical-align: top;
+            border: 2px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .float_contents::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .floats {
+            width: 30%;
+            float: left;
+            margin: 1%;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(117, 115, 115);
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #dfdede;
+        }
+
+        .form_sections form {
+            background: rgb(252, 248, 248);
+            padding: 20px;
+            border: 1px solid #cec9c9;
+            margin-top: 20px;
+
+
+        }
+
+        form input,
+        form select,
+        form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        ul ul,
+        ol ol,
+        ul li,
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: rgb(88, 88, 88);
+            height: 80px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            color: white;
+
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+        .header h1,.header p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Massive Super Complex HTML CSS Project</h1>
+        <p>Showcasing All HTML and CSS Techniques Without Frameworks</p>
+    </div>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Cards</a>
+        <a href="">Float Layout</a>
+        <a href="">Table</a>
+        <a href="">Form</a>
+        <a href="">Nested List</a>
+    </nav>
+    <div class="container">
+        <section id="introduction">
+            <h1>Introduction</h1>
+            <p>This file merges complex HTML/CSS examples using floats, inline-blocks, and semantic structure without
+                modern CSS layout techniques like Flexbox or Grid.</p>
+        </section>
+        <section id="card-selection">
+            <h2>Card Selection</h2>
+            <div class="card">
+                <h3>Card one</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card two</h3>
+                <p>Integer vitae sapien sed nulla euismod euismod sed vitae nulla.</p>
+            </div>
+            <div class="card">
+                <h3>Card three</h3>
+                <p>Maecenas nec commodo odio. Integer at enim ac metus pretium.</p>
+            </div>
+
+        </section>
+        <section id="float_layout">
+            <h2>Float Layout</h2>
+            <div class="float_contents">
+                <div class="floats">
+                    <h4>Box A</h4>
+                    <p>Fusce ut placerat orci nulla pellentesque dignissim.</p>
+                </div>
+                <div class="floats">
+                    <h4>Box B</h4>
+                    <p>Aenean euismod elementum nisi quis eleifend quam adipiscing vitae.</p>
+
+                </div>
+                <div class="floats">
+                    <h4>Box C</h4>
+                    <p>Quisque non tellus orci ac auctor augue mauris augue.</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="Table">
+            <h2>Complex Table</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Category</th>
+                        <th colspan="2">2024</th>
+                        <th rowspan="2">Total</th>
+                    </tr>
+                    <tr>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>$10,000</td>
+                        <td>$12,000</td>
+                        <td>$22,000</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td colspan="2">$50,000</td>
+                        <td>$50,000</td>
+                    </tr>
+                    <tr>
+                        <td>HR</td>
+                        <td>$5,000</td>
+                        <td>$6,000</td>
+                        <td>$11,000</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+        <section class="form_sections">
+            <h2>Comprehensive Form</h2>
+            <form action="">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <label>Subscribe</label>
+                <input type="checkbox" name="subscribe">Yes,sign me up!
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="USA">USA</option>
+                    <option value="UL">UK</option>
+                    <option value="India">India</option>
+                </select>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="5"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <section class="nested_list">
+            <h2>Nested List</h2>
+            <ol type="1">
+                <li>Frontend </li>
+                <ul type="circle">
+                    <li>Html</li>
+                    <ul type="square">
+                        <li>forms</li>
+                        <li>Tables</li>
+                    </ul>
+                    <li>Css</li>
+                    <ul>
+                        <li>Box model</li>
+                        <li>positioning</li>
+                    </ul>
+                </ul>
+                <li>Backend</li>
+                <ol type="1">
+                    <li>Node.js</li>
+                    <li>PHP</li>
+                </ol>
+                <li>Database</li>
+                <ul type="circle">
+                    <li>MY Sql</li>
+                    <li>Mongo DB</li>
+                </ul>
+            </ol>
+        </section>
+
+    </div>
+    <footer class="footer">
+        <p>© 2025 - Combined Massive HTML/CSS Project Footer</p>
+    </footer>
+
+
+</body>
+
+</html>

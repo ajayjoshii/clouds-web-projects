@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-attachment: scroll;
+        }
+
+        .navbar {
+            display: flex;
+            padding: 10px;
+            background-color: rgb(45, 41, 41);
+            color: white;
+            height: 50px;
+        }
+
+        .nav-contents {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .navbar h1 {
+            font-size: 30px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 5px;
+            margin: 35px;
+            color: white;
+        }
+
+        .image {
+            background-size: cover;
+            background-repeat: no repeat;
+            width: 100%;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
+            background-image: url(https://hips.hearstapps.com/hmg-prod/images/wisteria-in-bloom-royalty-free-image-1653423554.jpg?crop=0.685xw:1.00xh;0.112xw,0&resize=980:*);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            color: white;
+            flex-direction: column;
+            padding: 250px;
+            gap: 5px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: white;
+        }
+
+        p {
+            font-size: 16px;
+            color: white;
+            text-align: left;
+        }
+
+        .image button {
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: black;
+        }
+
+        .box p {
+            color: black;
+        }
+
+        .why_choose {
+            background: rgb(244, 242, 239);
+            height: 1600px;
+
+        }
+
+        .why_choose h1 {
+            padding: 30px;
+
+        }
+
+        .box {
+            height: 100px;
+            width: 210px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+
+
+        }
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .Services {
+            height: 120px;
+            width: 210px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+
+
+        }
+
+        .our_services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .Services p {
+            color: black;
+        }
+
+        .project_showcase h3 {
+            text-align: center;
+        }
+
+        .project_img {
+            padding: 18px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .project_img img {
+            border-radius: 8px;
+            height: 170px;
+            width: 270px;
+        }
+
+        .Review p {
+            color: black;
+        }
+
+        .Clients_review h3 {
+            text-align: center;
+            padding: 18px;
+            margin: 15px;
+        }
+
+        .Reviews {
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .Review {
+            height: 100px;
+            width: 250px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .Review p {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .Review h4 {
+            font-size: 18px;
+        }
+
+        .Pricing {
+            text-align: center;
+            padding: 19px;
+        }
+
+        .Pricing h3 {
+            padding: 12px;
+        }
+
+        .Plans {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .Plan {
+            background-color: white;
+            border-radius: 10px;
+            height: 200px;
+            width: 280px;
+        }
+
+        .Plan h4 {
+            font-size: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .Plan p {
+            color: black;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .Contact_us h3 {
+            text-align: center;
+        }
+
+        .name_email {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+        }
+
+        .name_email input {
+            flex: 1;
+        }
+
+        .forms {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 18px;
+
+        }
+
+        input,
+        textarea,
+        .forms button {
+            padding: 12px;
+            border: 1px solid #cdc8c8;
+            border-radius: 6px;
+            width: 98%;
+        }
+
+        .forms button {
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .forms button:hover {
+            background-color: rgb(53, 50, 50);
+            transition: 0.7s;
+        }
+
+        .footer {
+            background-color: black;
+            height: 50px;
+            padding: 10px;
+        }
+
+        .footer_contents p {
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

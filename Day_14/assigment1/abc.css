@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: blue;
+    height: 100vh;
+    width: 100vh;
+}
+.container{
+    background-color: blueviolet;
+    height: 50%;
+    width: 100%;
+    display:grid;
+    border: 50px;
+    gap: 5px;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(7,1fr);
+    padding: 2px;
+}
+.div1{
+    background-color: black;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: white;
+}
+.div2{
+    background-color: yellow;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+.div3{
+    background-color: greenyellow;
+    grid-row-start:1 ;
+    grid-row-end: 3;
+    grid-column-start:4;
+    grid-column-end: 5;
+}
+.div4{
+    background-color: rgb(41, 65, 5);
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    grid-column-start:5;
+    grid-column-end: 8;
+}
+.div5{
+    background-color: rgb(145, 57, 85);
+    grid-row-start:2 ;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.div6{
+    background-color: rgb(14, 18, 7);
+    grid-row-start:2 ;
+    grid-row-end: 4;
+    grid-column-start:3;
+    grid-column-end: 4;
+}.div7{
+    background-color: rgb(187, 14, 144);
+    grid-row-start:3 ;
+    grid-row-end: 6;
+    grid-column-start:1;
+    grid-column-end: 2;
+}.div8{
+    background-color: rgb(210, 146, 62);
+    grid-row-start:3 ;
+    grid-row-end: 4;
+    grid-column-start:2;
+    grid-column-end: 3;
+}.div9{
+    background-color: rgb(34, 31, 230);
+    grid-row-start:4 ;
+    grid-row-end: 6;
+    grid-column-start:2;
+    grid-column-end: 4;
+}.div10{
+    background-color: rgb(34, 187, 196);
+    grid-row-start:3 ;
+    grid-row-end: 6;
+    grid-column-start:4;
+    grid-column-end: 6;
+}.div11{
+    background-color: greenyellow;
+    grid-row-start:2;
+    grid-row-end: 3;
+    grid-column-start:5;
+    grid-column-end: 6;
+}.div12{
+    background-color: rgb(223, 22, 22);
+    grid-row-start:2 ;
+    grid-row-end: 4;
+    grid-column-start:6;
+    grid-column-end: 8;
+}.div13{
+    background-color: rgb(35, 153, 217);
+    grid-row-start:4 ;
+    grid-row-end: 6;
+    grid-column-start:6;
+    grid-column-end: 8;
+}

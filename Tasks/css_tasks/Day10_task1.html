@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-attachment: scroll;
+            background-color: rgb(212, 210, 210);
+
+        }
+
+        .navbar-contents {
+            background-color: rgb(54, 51, 51);
+            color: white;
+            height: 100px;
+            padding-left: 5px;
+        }
+
+        .navbar-contents h1 {
+            padding: 25px 0px 0px 10px;
+        }
+
+        .nav-links {
+            padding: 8px 0px 0px 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            padding-right: 5px;
+        }
+
+        .overview_and_widgets {
+            display: flex;
+        }
+
+        .project-overview {
+            height: 1500px;
+            width: 70%;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: white;
+
+        }
+
+        .overview-contents {
+            padding: 10px;
+        }
+
+
+        .Siderbar_widgets {
+            height: 900px;
+            width: 30%;
+            border-radius: 10px;
+            background-color: white;
+            margin: 10px;
+
+        }
+
+        .Siderbar_widgets {
+            padding: 10px;
+
+        }
+
+        .gallery {
+            margin: 10px;
+
+
+        }
+
+        .gallery img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 700px;
+            border-radius: 6px;
+        }
+
+        .project_stats {
+            margin: 10px;
+
+
+        }
+
+        .project_stats h1 {
+            font-size: 20px;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 30px;
+            width: 700px;
+            text-align: left;
+            padding-left: 4px;
+        }
+
+        .Contact {
+            margin: 10px;
+        }
+
+        .Contact h1 {
+            font-size: 20px;
+        }
+
+        .name input {
+            height: 15px;
+            width: 700px;
+            border: 1px solid rgb(167, 156, 156);
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        .email input {
+            height: 15px;
+            width: 700px;
+            border: 1px solid rgb(167, 156, 156);
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        .message textarea {
+            height: 50px;
+            width: 700px;
+            border: 1px solid rgb(167, 156, 156);
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        .topic select {
+            height: 30px;
+            width: 710px;
+        }
+        button{
+            margin: 10px;
+            height: 30px;
+            width: 710px;
+            background-color: rgb(41, 108, 253);
+            color: white;
+            border: none;
+        }
+        button:hover{
+            background-color: blue;
+            transition: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-contents">
+        <h1>COMPLEX PROJECT</h1>
+        <div class="nav-links">
+            <a href="">HOME</a>
+            <a href="">BLOG</a>
+            <a href="">GALLERY</a>
+            <a href="">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="overview_and_widgets">
+        <div class="project-overview">
+            <div class="overview-contents">
+                <h1>Project Overview</h1>
+                <p>This section describes the project details. The layout is built using Grid and Flexbox for
+                    scalability.
+                </p>
+
+            </div>
+
+            <div class="gallery">
+                <h1>Image Gallery</h1>
+                <img src="https://bucolic-kleicha-ae0719.netlify.app/images.jpg" alt="">
+                <p>Sample image with caption</p>
+
+            </div>
+            <div class="project_stats">
+                <h1>Project Stats</h1>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Complete</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td>In Progress</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="Contact">
+                <h1>Contact Us</h1>
+                <div class="name">
+                    <label for="">Name</label> <br>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="email">
+                    <label for="=">Email</label> <br>
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="message">
+                    <label for="=">Message</label> <br>
+                    <textarea name="" id="Message" placeholder="Your Message"></textarea>
+                </div>
+                <div class="topic">
+                    <label for="topic">Topic</label> <br>
+                    <select name="topic" id="topic">
+                        <option value="" selected>General</option>
+                        <option value="">Support</option>
+                        <option value="">Sales</option>
+                    </select>
+
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+
+        </div>
+
+        <div class="Siderbar_widgets">
+            <h1>Sidebar Widgets</h1>
+            <ul>
+                <li>Recent Posts</li>
+                <li>Popular Articles</li>
+                <li>Tags</li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

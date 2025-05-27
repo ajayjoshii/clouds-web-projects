@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        h1{
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: times 3s linear 0s infinite alternate;
+        }
+        @keyframes times {
+            /* from{
+                background-color: red;
+
+            }
+            to{
+                background-color: green;
+                height: 200px;
+                width: 2    00px;
+
+            } */
+             0%{
+                background-color: red;
+                left:0;
+                top: 0;
+             }
+             15%
+             {
+                background-color: indigo;
+             }
+             30%{
+                background-color: green;
+             }
+             45%{
+                background-color: brown;
+             }
+             60%{
+                background-color: bisque;
+             }
+             75%
+             {
+                background-color: aquamarine;
+             }
+             100%{
+                background-color: blanchedalmond;
+                top: 10%;
+                left: 100%;
+             }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+    </div>
+</body>
+</html>

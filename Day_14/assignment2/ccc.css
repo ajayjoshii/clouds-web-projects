@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-color: red;
+    height: 100vh;
+    width:100vh; */
+/* }         */
+.grid{
+    display: grid;
+    background-color:yellow;
+    height: 100%;
+    width: 70%;
+    gap: 4px;
+    grid-template-rows: repeat(14,1fr);
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+
+}
+.div1{
+    background-color: antiquewhite;
+    grid-area:1/1/5/2;
+} 
+.div2{
+    background-color: black;
+    grid-row-start:1 ;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white;
+}
+.div3{
+    background-color: rgb(235, 17, 17);
+    grid-row-start:1 ;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    color: white;
+}
+.div4{
+    background-color: rgb(59, 184, 68);
+    grid-row-start:1 ;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    color: white;
+}
+.div5{
+    background-color: rgb(94, 56, 56);
+    grid-row-start:5 ;
+    grid-row-end:9;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: white;
+}
+.div6{
+    background-color: rgb(175, 120, 120);
+    grid-row-start:6 ;
+    grid-row-end:10;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white;
+}
+.div7{
+    background-color: rgb(108, 102, 102);
+    grid-row-start:5;
+    grid-row-end: 11;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    color: white;
+}
+.div8{
+    background-color: rgb(179, 138, 138);
+    grid-row-start:6 ;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    color: white;
+}
+.div9{
+    background-color: rgb(67, 25, 25);
+    grid-row-start:9;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: white;
+}
+.div10{
+    background-color: rgb(115, 6, 6);
+    grid-row-start:13 ;
+    grid-row-end: 15;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: white;
+}
+.div11{
+    background-color: rgb(172, 103, 103);
+    grid-row-start:10 ;
+    grid-row-end: 15;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white;
+}
+.div12{
+    background-color: rgb(63, 20, 20);
+    grid-row-start:11;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    color: white;
+}
+.div13{
+    background-color: rgb(217, 53, 53);
+    grid-row-start:9 ;
+    grid-row-end: 15;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    color: white;
+}
+@media (max-width:1200px) and (min-width:992px) {
+   
+     body{
+        display: none;
+     }
+    .parent {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+}
