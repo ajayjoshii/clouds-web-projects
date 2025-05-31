@@ -102,12 +102,17 @@
 //     break;
 
 // }
-let a=1;
-while(a<=5)
-{
-    a++;
+// let a=1;
+// while(a<=5)
+// {
+//     a++;
+// }
+// do{
+//     console.log(a);
+//     a++;
+// }while(a<=10)
+// 
+function calculator(){
+    const num1 = parseInt
+    
 }
-do{
-    console.log(a);
-    a++;
-}while(a<=10)
